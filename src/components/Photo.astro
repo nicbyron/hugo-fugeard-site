@@ -1,0 +1,33 @@
+---
+// Shows a photo from src/images by file name, resized and compressed automatically.
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  file: string;
+  alt: string;
+  widths?: number[];
+  sizes?: string;
+  class?: string;
+  loading?: 'eager' | 'lazy';
+}
+
+const { file, alt, widths = [480, 800, 1200, 1600], sizes = '100vw', class: className, loading = 'lazy' } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/*.{jpg,jpeg,png,webp,JPG,JPEG,PNG,WEBP}', { eager: true });
+const image = images[`/src/images/${file}`];
+if (!image) {
+  throw new Error(`Photo "${file}" was not found in src/images. Check the file name (capital letters matter).`);
+}
+---
+
+<Picture
+  src={image.default}
+  alt={alt}
+  widths={widths}
+  sizes={sizes}
+  formats={['avif', 'webp']}
+  class={className}
+  loading={loading}
+  decoding="async"
+/>

@@ -1,0 +1,148 @@
+/* Version A, "Copper Table". Colours and fonts live in :root so they are easy to change. */
+:root {
+  --cream: #f6efe6;
+  --linen: #ede2d3;
+  --ink: #2b211b;
+  --muted: #6e5d50;
+  --copper: #b4693e;
+  --copper-dark: #8f4f2b;
+  --line: #dccbb6;
+  --font-display: 'Fraunces Variable', Georgia, serif;
+  --font-body: 'Inter Variable', system-ui, sans-serif;
+  --radius: 14px;
+  --max: 1180px;
+  color-scheme: light;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+picture { display: contents; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; line-height: 1.1; margin: 0 0 0.5em; font-variation-settings: 'SOFT' 100, 'WONK' 1; }
+h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); letter-spacing: -0.02em; }
+h2 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -0.01em; }
+h3 { font-size: 1.35rem; }
+p { margin: 0 0 1em; }
+:focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; }
+
+.skip-link { position: absolute; left: -999px; top: 8px; background: var(--ink); color: var(--cream); padding: 8px 14px; border-radius: 8px; z-index: 100; }
+.skip-link:focus { left: 8px; }
+
+/* Header */
+.header {
+  position: sticky; top: 0; z-index: 50;
+  display: flex; align-items: center; gap: 24px;
+  padding: 14px max(16px, calc((100vw - var(--max)) / 2));
+  background: color-mix(in srgb, var(--cream) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-family: var(--font-display); font-size: 1.35rem; text-decoration: none; margin-right: auto; }
+.header nav { display: flex; gap: 22px; font-size: 0.95rem; }
+.header nav a { text-decoration: none; color: var(--muted); }
+.header nav a:hover { color: var(--ink); }
+.header .nav-cta { color: var(--copper-dark); font-weight: 600; }
+.lang { font-size: 0.85rem; text-decoration: none; border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px; }
+.lang:hover { border-color: var(--copper); }
+
+/* Shared section spacing */
+main > section { max-width: var(--max); margin: 0 auto; padding: 96px 16px; }
+.intro { color: var(--muted); max-width: 38rem; font-size: 1.1rem; margin-bottom: 2.5rem; }
+.eyebrow { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--copper-dark); font-weight: 600; }
+.lead { font-size: 1.2rem; color: var(--muted); max-width: 34rem; }
+
+/* Buttons */
+.buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.6rem; }
+.button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border-radius: 999px; font-weight: 600; text-decoration: none; transition: transform 0.15s ease, background 0.15s ease; }
+.button:hover { transform: translateY(-1px); }
+.button.primary { background: var(--copper); color: #fff; }
+.button.primary:hover { background: var(--copper-dark); }
+.button.ghost { border: 1.5px solid var(--ink); }
+.button.light { background: var(--cream); color: var(--ink); }
+.button.outline-light { border: 1.5px solid var(--cream); color: var(--cream); }
+
+/* Arch photos: the shape of a doorway, a nod to "feeling at home" */
+.arch { border-radius: 999px 999px var(--radius) var(--radius); overflow: hidden; background: var(--linen); }
+
+/* Hero */
+.hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 64px; align-items: center; padding-top: 72px !important; }
+.hero-photo { aspect-ratio: 4 / 5; }
+
+/* About */
+.about { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 72px; align-items: center; }
+.about-photo { aspect-ratio: 3 / 4; }
+.about p { font-size: 1.12rem; }
+
+/* Approach */
+.approach { border-top: 1px solid var(--line); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background: var(--linen); border-radius: var(--radius); padding: 32px 28px; }
+.card-number { font-family: var(--font-display); color: var(--copper); font-size: 1.1rem; }
+.card h3 { margin-top: 12px; }
+.card p { color: var(--muted); margin: 0; }
+.cuisines { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 40px; }
+.cuisines-title { font-family: var(--font-display); font-size: 1.3rem; margin-right: 6px; }
+.cuisines ul { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; margin: 0; padding: 0; }
+.cuisines li { border: 1px solid var(--copper); color: var(--copper-dark); border-radius: 999px; padding: 6px 16px; font-size: 0.95rem; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 260px; gap: 14px; }
+.gallery-grid figure { margin: 0; border-radius: var(--radius); overflow: hidden; background: var(--linen); }
+.gallery-grid figure:nth-child(1) { grid-row: span 2; }
+.gallery-grid figure:nth-child(6) { grid-column: 1 / -1; }
+
+/* Process */
+.process { border-top: 1px solid var(--line); }
+.steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 32px; }
+.steps li { counter-increment: step; position: relative; padding: 24px 0 24px 64px; border-top: 1px solid var(--line); }
+.steps li::before { content: counter(step); position: absolute; left: 0; top: 22px; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--copper); color: #fff; font-family: var(--font-display); font-size: 1.2rem; }
+.steps h3 { font-size: 1.2rem; margin-bottom: 0.3em; }
+.steps p { color: var(--muted); margin: 0; }
+
+/* FAQ */
+.faq { max-width: 860px !important; }
+.faq-list { border-top: 1px solid var(--line); }
+details { border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; list-style: none; padding: 22px 40px 22px 0; position: relative; font-family: var(--font-display); font-size: 1.25rem; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: '+'; position: absolute; right: 4px; top: 50%; transform: translateY(-50%); font-size: 1.6rem; color: var(--copper); transition: transform 0.2s ease; }
+details[open] summary::after { transform: translateY(-50%) rotate(45deg); }
+details p { color: var(--muted); padding-right: 40px; }
+
+/* Contact */
+main > section.contact { max-width: none; background: var(--ink); color: var(--cream); text-align: center; padding: 110px 16px; }
+.contact h2 { color: var(--cream); }
+.contact p { color: color-mix(in srgb, var(--cream) 75%, transparent); font-size: 1.15rem; max-width: 34rem; margin-left: auto; margin-right: auto; }
+.contact .buttons { justify-content: center; }
+.contact-email { margin-top: 1.5rem; font-size: 0.95rem !important; }
+
+/* Footer */
+.footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 28px max(16px, calc((100vw - var(--max)) / 2)); font-size: 0.85rem; color: var(--muted); }
+
+/* Floating WhatsApp button, phones only */
+.floating-wa { display: none; position: fixed; right: 16px; bottom: 16px; z-index: 60; width: 56px; height: 56px; border-radius: 50%; background: var(--copper); color: #fff; place-items: center; box-shadow: 0 8px 24px rgb(43 33 27 / 0.25); }
+
+@media (max-width: 900px) {
+  .header nav { display: none; }
+  .hero, .about { grid-template-columns: 1fr; gap: 40px; }
+  .hero-photo { max-width: 460px; }
+  .about-photo { max-width: 380px; }
+  .cards { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 200px; }
+  main > section { padding: 72px 16px; }
+  .floating-wa { display: grid; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .button, summary::after { transition: none; }
+}

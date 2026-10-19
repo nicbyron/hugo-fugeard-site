@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Hugo Fugeard · Chef à domicile à Annecy",
+    "description": "Chef à domicile basé à Annecy. Une cuisine généreuse, à partager, pour les amis et les familles en chalet, en villa ou en maison de vacances, en France et à l'étranger."
+  },
+  "nav": {
+    "about": "Qui suis-je",
+    "approach": "Ma cuisine",
+    "process": "Comment ça marche",
+    "faq": "Questions",
+    "contact": "Contact",
+    "language": "English",
+    "skip": "Aller au contenu"
+  },
+  "hero": {
+    "eyebrow": "Chef à domicile · Annecy, en France et ailleurs",
+    "title": "Une table qui a le goût de la maison, où que vous soyez.",
+    "text": "Je m'appelle Hugo. Je cuisine des repas généreux, à partager, pour les amis et les familles en chalet, en villa ou en maison de vacances. Vous, vous profitez de vos proches.",
+    "primaryButton": "M'écrire sur WhatsApp",
+    "secondaryButton": "Envoyer un e-mail",
+    "image": "hero.jpg",
+    "imageAlt": "Une longue table dressée sous les arbres, prête pour un repas à partager"
+  },
+  "about": {
+    "title": "Bonjour, moi c'est Hugo",
+    "paragraphs": [
+      "Je suis chef à domicile, basé à Annecy. Je cuisine comme j'aime manger : de grands plats au milieu de la table, tout le monde se sert, personne n'est pressé.",
+      "Ma cuisine est simple, généreuse, faite avec de bons produits. Avec une grande cuisine, je la rends un peu plus raffinée. Avec une petite, je vous prépare un beau repas de famille.",
+      "Dans les deux cas, le but est le même : que vous vous sentiez chez vous, où que vous soyez."
+    ],
+    "image": "hugo.jpg",
+    "imageAlt": "Hugo en cuisine, souriant"
+  },
+  "approach": {
+    "title": "Ma façon de cuisiner",
+    "intro": "Chaque groupe, chaque maison et chaque cuisine sont différents. Je m'adapte aux gens et au lieu.",
+    "items": [
+      {
+        "title": "À partager",
+        "text": "Des plats servis à table, au milieu de tous. C'est comme ça que je cuisine presque partout, parce que c'est comme ça qu'on se détend."
+      },
+      {
+        "title": "Fait pour vous",
+        "text": "Vos goûts, vos allergies, les plats préférés des enfants. On construit le menu ensemble, et je cuisine pour chacun, pas seulement pour le groupe."
+      },
+      {
+        "title": "Raffiné ou réconfortant",
+        "text": "Une cuisine bien équipée permet des plats plus ambitieux. Une cuisine simple, un repas chaleureux et généreux. Les deux sont bons."
+      }
+    ],
+    "cuisinesTitle": "Au menu",
+    "cuisines": [
+      "Française",
+      "Italienne",
+      "Portugaise",
+      "Indienne",
+      "Vos envies"
+    ]
+  },
+  "gallery": {
+    "title": "À table",
+    "images": [
+      {
+        "file": "table-1.jpg",
+        "alt": "Un dîner aux chandelles, dehors, la nuit"
+      },
+      {
+        "file": "table-2.jpg",
+        "alt": "Une assiette prête à être servie"
+      },
+      {
+        "file": "table-3.jpg",
+        "alt": "Des amis qui rient autour de la table"
+      },
+      {
+        "file": "table-4.jpg",
+        "alt": "Des produits frais en cuisine"
+      },
+      {
+        "file": "table-5.jpg",
+        "alt": "Un dessert à partager"
+      },
+      {
+        "file": "table-6.jpg",
+        "alt": "Une table dressée pour un grand groupe"
+      }
+    ]
+  },
+  "process": {
+    "title": "Comment ça marche",
+    "intro": "Du premier message au dernier dessert, voici comment on travaille ensemble.",
+    "steps": [
+      {
+        "title": "Faisons connaissance",
+        "text": "Dites-moi où, quand, combien vous serez et ce que vous fêtez."
+      },
+      {
+        "title": "Votre proposition",
+        "text": "Je vous envoie une proposition personnalisée pour les jours et les repas dont vous avez besoin."
+      },
+      {
+        "title": "L'acompte",
+        "text": "Un acompte confirme vos dates. Elles sont à vous."
+      },
+      {
+        "title": "Le menu, ensemble",
+        "text": "On construit les menus ensemble. Vous les validez avant mon arrivée."
+      },
+      {
+        "title": "Les courses",
+        "text": "L'idéal : les courses livrées à la maison. J'ai plus de temps pour cuisiner. Sinon, je m'occupe des courses."
+      },
+      {
+        "title": "Profitez",
+        "text": "Je m'occupe de la cuisine. Vous vous occupez de vos proches."
+      },
+      {
+        "title": "On fait les comptes",
+        "text": "À la fin, on règle les courses et les frais éventuels, avec tous les tickets."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "question": "Que fait un chef à domicile, concrètement ?",
+        "answer": "Je viens dans votre maison ou votre location de vacances et je cuisine pour vous pendant votre séjour : tous les repas, ou seulement les grandes soirées. On prépare les menus ensemble, je cuisine sur place et je sers à table."
+      },
+      {
+        "question": "Et si la cuisine est petite ou peu équipée ?",
+        "answer": "Aucun problème. J'adapte le menu à la cuisine. Un grand four et beaucoup de casseroles me permettent d'aller vers le raffiné. Une cuisine simple, c'est un beau repas de famille."
+      },
+      {
+        "question": "Vous vous déplacez hors de France ?",
+        "answer": "Oui. Je suis basé à Annecy et je me déplace en France et à l'étranger. Le déplacement est inclus dans votre proposition."
+      },
+      {
+        "question": "La maison est difficile d'accès. C'est un problème ?",
+        "answer": "Dites-moi où elle se trouve. On organise le trajet ensemble : voiture, navette ou covoiturage."
+      },
+      {
+        "question": "Allergies, régimes, enfants difficiles ?",
+        "answer": "Bien sûr. Parlez-moi des allergies, de ce que vous n'aimez pas et des habitudes des enfants quand on prépare le menu. Tout le monde mange bien."
+      },
+      {
+        "question": "Qui fait les courses ?",
+        "answer": "L'idéal est une livraison d'un supermarché local, parce que j'ai plus de temps pour cuisiner. Sinon, je fais les courses moi-même. Les courses sont facturées au prix coûtant, avec les tickets."
+      },
+      {
+        "question": "Vous faites aussi le service et le ménage ?",
+        "answer": "Je m'occupe de la cuisine et des repas. Pour les grands groupes, je peux venir avec un assistant ou un maître d'hôtel pour le service, les verres et le rangement. Sur demande."
+      },
+      {
+        "question": "Combien ça coûte ?",
+        "answer": "Chaque séjour est différent, alors je vous envoie une proposition personnalisée. Écrivez-moi avec vos dates, le lieu et le nombre de personnes."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Préparons votre table",
+    "text": "Envoyez-moi vos dates, le lieu et le nombre de personnes. Je m'occupe du reste.",
+    "whatsappButton": "WhatsApp",
+    "emailButton": "E-mail",
+    "whatsappMessage": "Bonjour Hugo ! J'aimerais organiser un séjour avec vous. Dates : ... Lieu : ... Nombre de personnes : ...",
+    "emailSubject": "Demande de chef à domicile"
+  },
+  "footer": {
+    "tagline": "Chef à domicile · Annecy, France",
+    "rights": "Tous droits réservés."
+  }
+}

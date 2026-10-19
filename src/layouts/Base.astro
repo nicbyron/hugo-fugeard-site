@@ -1,0 +1,58 @@
+---
+import { getImage } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { getContent, homePath, locales, site, type Locale } from '../i18n';
+import '../styles/fonts';
+import '../styles/global.css';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const t = getContent(locale);
+const canonical = new URL(homePath(locale), Astro.site);
+
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/images/*', { eager: true });
+const hero = images[`/src/images/${t.hero.image}`];
+const ogImage = hero ? await getImage({ src: hero.default, width: 1200, format: 'jpg' }) : undefined;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: site.name,
+  jobTitle: locale === 'fr' ? 'Chef à domicile' : 'Private chef',
+  description: t.meta.description,
+  url: canonical.href,
+  email: `mailto:${site.email}`,
+  telephone: `+${site.whatsapp}`,
+  address: { '@type': 'PostalAddress', addressLocality: site.city, addressCountry: site.country },
+  knowsLanguage: ['fr', 'en'],
+};
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{t.meta.title}</title>
+    <meta name="description" content={t.meta.description} />
+    <link rel="canonical" href={canonical.href} />
+    {locales.map((l) => <link rel="alternate" hreflang={l} href={new URL(homePath(l), Astro.site).href} />)}
+    <link rel="alternate" hreflang="x-default" href={new URL(homePath('fr'), Astro.site).href} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={t.meta.title} />
+    <meta property="og:description" content={t.meta.description} />
+    <meta property="og:url" content={canonical.href} />
+    <meta property="og:locale" content={locale === 'fr' ? 'fr_FR' : 'en_US'} />
+    {ogImage && <meta property="og:image" content={new URL(ogImage.src, Astro.site).href} />}
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t.nav.skip}</a>
+    <slot />
+  </body>
+</html>

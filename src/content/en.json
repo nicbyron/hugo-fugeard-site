@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "Hugo Fugeard · Private chef in Annecy, France",
+    "description": "Private chef based in Annecy. Generous, family-style meals for friends and families in chalets, villas and holiday homes, in France and abroad."
+  },
+  "nav": {
+    "about": "About",
+    "approach": "My cooking",
+    "process": "How it works",
+    "faq": "Questions",
+    "contact": "Contact",
+    "language": "Français",
+    "skip": "Skip to content"
+  },
+  "hero": {
+    "eyebrow": "Private chef · Annecy, France and beyond",
+    "title": "A feast that feels like home, wherever you gather.",
+    "text": "I'm Hugo. I cook generous, family-style meals for friends and families in chalets, villas and holiday homes, so you can sit back and enjoy your people.",
+    "primaryButton": "Message me on WhatsApp",
+    "secondaryButton": "Send an email",
+    "image": "hero.jpg",
+    "imageAlt": "A long table set under the trees, ready for a shared meal"
+  },
+  "about": {
+    "title": "Hello, I'm Hugo",
+    "paragraphs": [
+      "I'm a private chef based in Annecy. I cook the way I like to eat: big dishes in the middle of the table, everyone sharing, nobody in a hurry.",
+      "My food is simple, generous and made with good products. Give me a big kitchen and I'll make it a little fancy. Give me a small one and I'll make you a beautiful family meal.",
+      "Either way, the goal is the same. You feel at home, wherever you are."
+    ],
+    "image": "hugo.jpg",
+    "imageAlt": "Hugo in the kitchen, smiling"
+  },
+  "approach": {
+    "title": "How I cook",
+    "intro": "Every group, every house and every kitchen is different. I adapt to the people and the place.",
+    "items": [
+      {
+        "title": "Family style",
+        "text": "Dishes to share, served at the table. It's how I cook almost everywhere, because it's how people relax."
+      },
+      {
+        "title": "Made for you",
+        "text": "Your tastes, your allergies, your kids' favourites. We build the menu together, and I cook for each person, not just the group."
+      },
+      {
+        "title": "Fancy or cozy",
+        "text": "A full kitchen means more ambitious dishes. A simple kitchen means a warm, generous meal. Both are good."
+      }
+    ],
+    "cuisinesTitle": "On the menu",
+    "cuisines": [
+      "French",
+      "Italian",
+      "Portuguese",
+      "Indian",
+      "Your favourites"
+    ]
+  },
+  "gallery": {
+    "title": "At the table",
+    "images": [
+      {
+        "file": "table-1.jpg",
+        "alt": "A candlelit dinner outside at night"
+      },
+      {
+        "file": "table-2.jpg",
+        "alt": "A plate of food ready to be served"
+      },
+      {
+        "file": "table-3.jpg",
+        "alt": "Friends laughing around the table"
+      },
+      {
+        "file": "table-4.jpg",
+        "alt": "Fresh ingredients in the kitchen"
+      },
+      {
+        "file": "table-5.jpg",
+        "alt": "A dessert to share"
+      },
+      {
+        "file": "table-6.jpg",
+        "alt": "A table set for a big group"
+      }
+    ]
+  },
+  "process": {
+    "title": "How it works",
+    "intro": "From the first message to the last dessert, here's what working together looks like.",
+    "steps": [
+      {
+        "title": "Say hello",
+        "text": "Tell me where, when, how many people, and what you're celebrating."
+      },
+      {
+        "title": "Your proposal",
+        "text": "I send you a personal proposal for the days and meals you need."
+      },
+      {
+        "title": "A deposit",
+        "text": "A deposit confirms your dates. Then they're yours."
+      },
+      {
+        "title": "The menu, together",
+        "text": "We build the menus together. You approve them before I arrive."
+      },
+      {
+        "title": "Groceries",
+        "text": "Ideally, groceries are delivered to the house. It gives me more time to cook. If not, I do the shopping."
+      },
+      {
+        "title": "Sit back",
+        "text": "I take care of the kitchen. You take care of your people."
+      },
+      {
+        "title": "Settle up",
+        "text": "At the end, we settle the groceries and any expenses, with every receipt."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Questions",
+    "items": [
+      {
+        "question": "What does a private chef actually do?",
+        "answer": "I come to your house or holiday rental and cook for you during your stay: every meal, or just the big nights. I plan the menus with you, cook on site and serve at the table."
+      },
+      {
+        "question": "What if the kitchen is small or basic?",
+        "answer": "No problem. I adapt the menu to the kitchen. A big oven and plenty of pots let me go fancier. A simple kitchen means a beautiful family-style meal."
+      },
+      {
+        "question": "Do you travel outside France?",
+        "answer": "Yes. I'm based in Annecy and I travel in France and abroad. Travel is included in your proposal."
+      },
+      {
+        "question": "The house is hard to reach. Is that a problem?",
+        "answer": "Tell me where it is. We'll sort out the travel together, by car, pickup or a shared ride."
+      },
+      {
+        "question": "Allergies, diets, picky kids?",
+        "answer": "Of course. Tell me about allergies, dislikes and kids' habits when we plan the menu. Everyone eats well."
+      },
+      {
+        "question": "Who buys the groceries?",
+        "answer": "Home delivery from a local supermarket is ideal, because it gives me more time to cook. Otherwise I shop myself. Groceries are billed at cost, with receipts."
+      },
+      {
+        "question": "Do you also serve and clean up?",
+        "answer": "I look after the kitchen and the food. For bigger groups, I can bring an assistant or a butler for service, glasses and cleaning. Available on request."
+      },
+      {
+        "question": "How much does it cost?",
+        "answer": "Every stay is different, so I send a personal proposal. Write to me with your dates, the place and the size of your group."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Let's plan your table",
+    "text": "Send me your dates, the place and how many people. I'll take it from there.",
+    "whatsappButton": "WhatsApp",
+    "emailButton": "Email",
+    "whatsappMessage": "Hi Hugo! I'd like to plan a stay with you. Dates: ... Place: ... Number of people: ...",
+    "emailSubject": "Private chef request"
+  },
+  "footer": {
+    "tagline": "Private chef · Annecy, France",
+    "rights": "All rights reserved."
+  }
+}
