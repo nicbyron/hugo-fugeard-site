@@ -120,3 +120,9 @@ details p { color: var(--muted); }
   .menu-card { padding: 56px 24px; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Arches: the shape of a doorway, a nod to "feeling at home" */
+.about-photo { border-radius: 999px 999px 6px 6px; }
+.strip figure { border-radius: 999px 999px 6px 6px; }
+.menu-card { border-radius: 380px 380px 0 0; padding-top: 110px; outline: 0; box-shadow: inset 0 0 0 1px var(--line); }
+@media (max-width: 900px) { .about-photo { max-width: 420px; } .menu-card { border-radius: 220px 220px 0 0; padding-top: 90px; } }
